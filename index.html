@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Anetous8</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            font-family: 'Poppins', sans-serif;
+            color: white;
+
+            background:
+                radial-gradient(circle at 50% 15%, #ff4fa3 0%, transparent 25%),
+                linear-gradient(135deg, #120916, #09090f 60%, #160b18);
+
+            overflow: hidden;
+        }
+
+        .profile {
+            margin-top: 55px;
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        .pfp-wrapper {
+            width: 155px;
+            height: 155px;
+            padding: 5px;
+            margin: 0 auto;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                135deg,
+                #ff4fa3,
+                #ff8ac5,
+                #9b5cff
+            );
+
+            box-shadow:
+                0 0 25px rgba(255, 79, 163, 0.55),
+                0 0 70px rgba(255, 79, 163, 0.2);
+
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pfp-wrapper:hover {
+            transform: scale(1.06);
+            box-shadow:
+                0 0 35px rgba(255, 79, 163, 0.8),
+                0 0 90px rgba(255, 79, 163, 0.3);
+        }
+
+        .pfp-wrapper img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            border-radius: 50%;
+
+            border: 3px solid #120916;
+            display: block;
+        }
+
+        h1 {
+            margin: 20px 0 5px;
+
+            font-size: 32px;
+            font-weight: 700;
+
+            background: linear-gradient(
+                90deg,
+                #fff,
+                #ff9dcc,
+                #fff
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .username {
+            margin: 0;
+            color: #b8aeb9;
+            font-size: 15px;
+        }
+
+        .line {
+            width: 60px;
+            height: 3px;
+            margin: 22px auto;
+
+            border-radius: 10px;
+            background: linear-gradient(90deg, #ff4fa3, #9b5cff);
+        }
+
+        .card {
+            width: 330px;
+            padding: 20px;
+            margin: 0 auto;
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+
+            background: rgba(255, 255, 255, 0.045);
+            backdrop-filter: blur(15px);
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+            color: #d8d0d8;
+            font-size: 14px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile">
+
+        <div class="pfp-wrapper">
+            <img src="pfp.jpg" alt="Anetous8">
+        </div>
+
+        <h1>Anetous8</h1>
+
+        <p class="username">@Anetous8</p>
+
+        <div class="line"></div>
+
+        <div class="card">
+            Welcome to Anetous8's little corner of the internet ♡
+        </div>
+
+    </div>
+
+</body>
+</html>
