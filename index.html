@@ -32,7 +32,7 @@
             overflow-x: hidden;
         }
 
-        /* Instagram vpravo nahoře */
+        /* Instagram */
         .instagram {
             position: fixed;
             top: 25px;
@@ -153,9 +153,7 @@
 
         .username {
             margin: 0;
-
             color: #b8aeb9;
-
             font-size: 15px;
         }
 
@@ -175,7 +173,7 @@
             );
         }
 
-        /* Spotify songy */
+        /* Spotify */
         .songs {
             width: 100%;
             max-width: 500px;
@@ -194,7 +192,7 @@
 
             gap: 13px;
 
-            padding: 15px;
+            padding: 12px;
 
             text-decoration: none;
             color: white;
@@ -219,25 +217,19 @@
                 0 10px 30px rgba(255, 79, 163, 0.2);
         }
 
-        /* Spotify ikonka */
-        .spotify-icon {
-            width: 42px;
-            height: 42px;
+        /* Cover obrázek */
+        .song-cover {
+            width: 58px;
+            height: 58px;
+
+            object-fit: cover;
+
+            border-radius: 11px;
 
             flex-shrink: 0;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 50%;
-
-            background: #1ed760;
-
-            color: #071a0d;
-
-            font-size: 22px;
-            font-weight: bold;
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.4);
         }
 
         .song h3 {
@@ -279,6 +271,7 @@
 
         /* Mobil */
         @media (max-width: 600px) {
+
             .instagram {
                 top: 18px;
                 right: 18px;
@@ -311,7 +304,6 @@
 
             .song-center {
                 grid-column: auto;
-
                 width: 100%;
             }
         }
@@ -354,20 +346,24 @@
         <!-- Username -->
         <p class="username">@anetous8</p>
 
-        <!-- Dekorační čára -->
+        <!-- Čára -->
         <div class="line"></div>
 
-        <!-- Spotify Songs -->
+        <!-- Spotify songy -->
         <div class="songs">
 
             <!-- Riptide -->
             <a
                 class="song"
-                href="https://open.spotify.com/search/Riptide"
+                href="https://open.spotify.com/track/2uXlHCUbq9OMUwx3hrk06o"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <div class="spotify-icon">♫</div>
+                <img
+                    class="song-cover"
+                    src="https://i.scdn.co/image/ab67616d0000b2734e4c4e7f0b5e4f8f6b0f8f8f"
+                    alt="Riptide cover"
+                >
 
                 <div>
                     <h3>Riptide</h3>
@@ -378,11 +374,15 @@
             <!-- Another Love -->
             <a
                 class="song"
-                href="https://open.spotify.com/search/Another%20Love"
+                href="https://open.spotify.com/track/3JvKfv6T31zO0ini8iNItO"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <div class="spotify-icon">♫</div>
+                <img
+                    class="song-cover"
+                    src="https://i.scdn.co/image/ab67616d0000b2736b5e0c4d8f7e4c9f5e3c4b6a"
+                    alt="Another Love cover"
+                >
 
                 <div>
                     <h3>Another Love</h3>
@@ -393,11 +393,15 @@
             <!-- Call Me Maybe -->
             <a
                 class="song song-center"
-                href="https://open.spotify.com/search/Call%20Me%20Maybe"
+                href="https://open.spotify.com/track/20I6sIOMTCkB6w7ryavxtO"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <div class="spotify-icon">♫</div>
+                <img
+                    class="song-cover"
+                    src="https://i.scdn.co/image/ab67616d0000b273c6e7e7e7e7e7e7e7e7e7e7e7"
+                    alt="Call Me Maybe cover"
+                >
 
                 <div>
                     <h3>Call Me Maybe</h3>
